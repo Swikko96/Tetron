@@ -1,0 +1,149 @@
+[gd_scene load_steps=2 format=3 uid="uid://gayc34ovyjbq"]
+
+[ext_resource type="Texture2D" uid="uid://dix5wnfc2mrci" path="res://tile.png" id="1_gtvpx"]
+
+[node name="GUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -802.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 164.0
+grow_vertical = 2
+
+[node name="Left" type="CenterContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="HBoxContainer/Left"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Statisctics" type="GridContainer" parent="HBoxContainer/Left/VBox"]
+layout_mode = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 6
+columns = 2
+
+[node name="_Highscore" type="Label" parent="HBoxContainer/Left/VBox/Statisctics"]
+layout_mode = 2
+text = "High score:"
+
+[node name="Highscore" type="Label" parent="HBoxContainer/Left/VBox/Statisctics"]
+layout_mode = 2
+text = "8888888"
+
+[node name="_Level" type="Label" parent="HBoxContainer/Left/VBox/Statisctics"]
+layout_mode = 2
+text = "Level:"
+
+[node name="Level" type="Label" parent="HBoxContainer/Left/VBox/Statisctics"]
+layout_mode = 2
+text = "1"
+
+[node name="_Score" type="Label" parent="HBoxContainer/Left/VBox/Statisctics"]
+layout_mode = 2
+text = "Score:"
+
+[node name="Score" type="Label" parent="HBoxContainer/Left/VBox/Statisctics"]
+layout_mode = 2
+text = "0"
+
+[node name="_Lines" type="Label" parent="HBoxContainer/Left/VBox/Statisctics"]
+layout_mode = 2
+text = "Lines:"
+
+[node name="Lines" type="Label" parent="HBoxContainer/Left/VBox/Statisctics"]
+layout_mode = 2
+text = "0"
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer/Left/VBox"]
+layout_mode = 2
+
+[node name="Next" type="GridContainer" parent="HBoxContainer/Left/VBox/CenterContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 1
+theme_override_constants/v_separation = 1
+columns = 2
+
+[node name="Cell" type="TextureRect" parent="HBoxContainer/Left/VBox/CenterContainer/Next"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
+
+[node name="Cell2" type="TextureRect" parent="HBoxContainer/Left/VBox/CenterContainer/Next"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
+
+[node name="Cell3" type="TextureRect" parent="HBoxContainer/Left/VBox/CenterContainer/Next"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
+
+[node name="Cell4" type="TextureRect" parent="HBoxContainer/Left/VBox/CenterContainer/Next"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
+
+[node name="Cell5" type="TextureRect" parent="HBoxContainer/Left/VBox/CenterContainer/Next"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
+
+[node name="Cell6" type="TextureRect" parent="HBoxContainer/Left/VBox/CenterContainer/Next"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
+
+[node name="Cell7" type="TextureRect" parent="HBoxContainer/Left/VBox/CenterContainer/Next"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
+
+[node name="Cell8" type="TextureRect" parent="HBoxContainer/Left/VBox/CenterContainer/Next"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
+
+[node name="NewGame" type="Button" parent="HBoxContainer/Left/VBox"]
+layout_mode = 2
+text = "New Game"
+
+[node name="Pause" type="Button" parent="HBoxContainer/Left/VBox"]
+layout_mode = 2
+text = "Pause "
+
+[node name="Music" type="Button" parent="HBoxContainer/Left/VBox"]
+layout_mode = 2
+text = "Music On/Off"
+
+[node name="About" type="Button" parent="HBoxContainer/Left/VBox"]
+layout_mode = 2
+text = "About"
+
+[node name="Right" type="MarginContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Grid" type="GridContainer" parent="HBoxContainer/Right"]
+layout_mode = 2
+columns = 10
+
+[node name="Cell" type="TextureRect" parent="HBoxContainer/Right/Grid"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
+
+[node name="Cell2" type="TextureRect" parent="HBoxContainer/Right/Grid"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
+
+[node name="Cell3" type="TextureRect" parent="HBoxContainer/Right/Grid"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
+
+[node name="Cell4" type="TextureRect" parent="HBoxContainer/Right/Grid"]
+layout_mode = 2
+texture = ExtResource("1_gtvpx")
