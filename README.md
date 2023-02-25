@@ -1,2 +1,2 @@
 # Tetron
-Tetris clone in godot
+Tetris clone in godot.
