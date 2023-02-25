@@ -1,22 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://gayc34ovyjbq"]
+[gd_scene load_steps=3 format=3 uid="uid://gayc34ovyjbq"]
 
+[ext_resource type="Script" path="res://gui.gd" id="1_1qbd2"]
 [ext_resource type="Texture2D" uid="uid://dix5wnfc2mrci" path="res://tile.png" id="1_gtvpx"]
 
-[node name="GUI" type="Control"]
-layout_mode = 3
+[node name="GUI" type="PanelContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -802.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_1qbd2")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 9
-anchor_bottom = 1.0
-offset_right = 164.0
-grow_vertical = 2
+layout_mode = 2
 
 [node name="Left" type="CenterContainer" parent="HBoxContainer"]
 custom_minimum_size = Vector2(200, 0)
